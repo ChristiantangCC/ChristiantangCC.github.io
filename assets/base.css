@@ -135,6 +135,8 @@ input[type="color"] {
   -webkit-appearance: none;
   background: none;
   border: none;
+  border-radius: 0;
+  height: 35px;
 }
 
 cc-slider {
