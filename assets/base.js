@@ -60,11 +60,12 @@ class Slider extends HTMLElement {
       for (const card of cards) {
         if (inputSlider.id == "Blur") {
           card.style.backdropFilter = "blur(" + inputSlider.value + "px)";
-          card.style.webkitBackdropFilter = "blur(" + inputSlider.value + "px)";
+          card.style["-webkit-backdrop-filter"] =
+            "blur(" + inputSlider.value + "px)";
           elementBlur.innerHTML =
             "backdrop-filter: blur" + "(" + inputSlider.value + "px" + ");";
           eelementWebkitBlur.innerHTML =
-            "webkit-backdrop-filter: blur" +
+            "-webkit-backdrop-filter: blur" +
             "(" +
             inputSlider.value +
             "px" +

@@ -89,6 +89,10 @@ footer {
 
 /* General CSS */
 
+.main-logo {
+  transform: rotate(90deg);
+}
+
 @media screen and (max-width: 749px) {
   .main-content {
     flex-direction: column;
