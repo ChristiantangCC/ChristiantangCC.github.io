@@ -14,7 +14,8 @@ class Slider extends HTMLElement {
     const inputSliderWrapper = document.createElement("div");
     inputSliderWrapper.classList.add("settings");
 
-    const inputSliderName = document.createElement("span");
+    const inputSliderName = document.createElement("label");
+    inputSliderName.setAttribute("for", this.getAttribute("name"));
     inputSliderName.innerHTML = this.getAttribute("name");
 
     const inputSliderValue = document.createElement("span");
