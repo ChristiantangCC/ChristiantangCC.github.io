@@ -36,6 +36,7 @@ class Slider extends HTMLElement {
     for (const card of cards) {
       if (inputSlider.id == "Blur") {
         card.style.backdropFilter = "blur(" + inputSlider.value + "px)";
+        card.style.webkitBackdropFilter = "blur(" + inputSlider.value + "px)";
       } else if (inputSlider.id == "Transparency") {
         card.style.background =
           "rgba(255, 255, 255, " + inputSlider.value + ")";
@@ -60,8 +61,7 @@ class Slider extends HTMLElement {
       for (const card of cards) {
         if (inputSlider.id == "Blur") {
           card.style.backdropFilter = "blur(" + inputSlider.value + "px)";
-          card.style["-webkit-backdrop-filter"] =
-            "blur(" + inputSlider.value + "px)";
+          card.style.webkitBackdropFilter = "blur(" + inputSlider.value + "px)";
           elementBlur.innerHTML =
             "backdrop-filter: blur" + "(" + inputSlider.value + "px" + ");";
           eelementWebkitBlur.innerHTML =
